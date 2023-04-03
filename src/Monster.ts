@@ -31,7 +31,6 @@ export default class Monster implements SimpleFighter {
   }
 
   attack(enemy: SimpleFighter): void {
-    const attackPoints = this.strength;
-    enemy.receiveDamage(attackPoints);
+    enemy.receiveDamage(this.strength);
   }
 }
